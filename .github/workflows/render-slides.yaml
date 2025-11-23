@@ -1,0 +1,45 @@
+name: Render Marp Slides
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  render:
+    name: Render slides to PDF and HTML
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Marp CLI
+        run: npm install -g @marp-team/marp-cli
+
+      - name: Render HTML
+        run: marp slides.md -o slides.html
+
+      - name: Render PDF
+        run: marp slides.md -o slides.pdf
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: marp-slides-artifacts
+          path: |
+            slides.html
+            slides.pdf
+
+      - name: Commit rendered HTML (optional)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add slides.html slides.pdf || true
+          git commit -m "chore: add rendered slides (from workflow)" || true
+          git push origin HEAD:main || true
