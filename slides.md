@@ -59,7 +59,8 @@ font-size: 0.9rem;
 ---
 
 backgroundImage: url('images/architecture-bg.png')
-background-position: center
+background-vertical: center
+background-horizontal: center
 class: lead
 -----------
 
