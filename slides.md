@@ -1,44 +1,22 @@
 ---
 
 marp: true
-theme: default
+
+theme: gaia 
 paginate: true
 
-# Custom theme CSS for Marp slides
-
-style: |
-/* Use a modern system font stack */
-section {
-font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+---
+<style>
+/* Position the page number in the bottom right corner */
+section::after {
+  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  font-size: 0.8em; /* Adjust font size */
+  color: grey; /* Adjust color */
 }
-
-/* Header area for contact */
-.marp-header {
-position: absolute;
-top: 0.6rem;
-left: 1rem;
-font-size: 0.85rem;
-opacity: 0.9;
-}
-
-/* Page number style (Marp's paginate creates .marp-pagination) */
-.marp-pagination {
-position: absolute;
-right: 1rem;
-bottom: 0.6rem;
-font-size: 0.82rem;
-color: rgba(0,0,0,0.6);
-}
-
-/* Make code blocks slightly larger and monospace */
-pre, code {
-font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
-font-size: 0.9rem;
-}
-
-/* Accent color for important badges */
-.badge { background: linear-gradient(90deg,#0ea5e9,#6366f1); color: white; padding: 0.25rem 0.5rem; border-radius: 6px; }
--------------------------------------------------------------------------------------------------------------------------
+</style>
 
 <!-- Title slide -->
 
@@ -58,12 +36,6 @@ font-size: 0.9rem;
 ![bg](\images\architecture-bg.png)
 
 ---
-
-backgroundImage: url('images/architecture-bg.png')
-background-vertical: center
-background-horizontal: center
-class: lead
------------
 
 # System Architecture
 
