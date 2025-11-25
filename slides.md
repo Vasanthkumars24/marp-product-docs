@@ -55,6 +55,7 @@ font-size: 0.9rem;
 * Suitable for engineering and product audiences
 
 ---
+![bg](\images\architecture-bg.png)
 
 ---
 
