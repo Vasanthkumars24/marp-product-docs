@@ -4,6 +4,28 @@ marp: true
 
 theme: gaia 
 paginate: true
+style: |
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+---
+
+# Slide with Custom Columns
+
+<div class="columns">
+  <div>
+    ### Left Column  
+    * Item A
+    * Item B
+  </div>
+  <div>
+    ### Right Column
+    Content goes here.
+  </div>
+</div>
 
 ---
 <style>
