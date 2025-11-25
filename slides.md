@@ -4,6 +4,7 @@ marp: true
 
 theme: gaia 
 paginate: true
+
 style: |
   .columns {
     display: grid;
@@ -41,6 +42,7 @@ section::after {
 
 # Slide with Custom Columns
 
+
 <div class="columns">
 <div>
 
@@ -59,13 +61,6 @@ Content goes here.
 
 ---
 
-## Purpose
-
-* Maintainable slide-based docs in Git
-* Easy conversion to PDF/HTML using Marp CLI
-* Suitable for engineering and product audiences
-
----
 ![bg](\images\architecture-bg.png)
 
 ---
@@ -163,6 +158,8 @@ marp-product-docs/
 ---
 
 # Thank you
+
+<!-- backgroundColor: aqua -->
 
 Contact: [22f3001685@ds.study.iitm.ac.in](mailto:22f3001685@ds.study.iitm.ac.in)
 
