@@ -10,22 +10,13 @@ style: |
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
+  .columns-left {
+    background: yellow;
+  }
+  .columns-right {
+    background: beige;
+  }
 
----
-
-# Slide with Custom Columns
-
-<div class="columns">
-  <div>
-    ### Left Column  
-    * Item A
-    * Item B
-  </div>
-  <div>
-    ### Right Column
-    Content goes here.
-  </div>
-</div>
 
 ---
 <style>
@@ -45,6 +36,26 @@ section::after {
 # MyProduct — Product Documentation
 
 **Contact:** [22f3001685@ds.study.iitm.ac.in](mailto:22f3001685@ds.study.iitm.ac.in)
+
+---
+
+# Slide with Custom Columns
+
+<div class="columns">
+<div>
+
+## Left Column 
+
+* Item A
+* Item B
+</div>
+<div>
+
+## Right Column
+
+Content goes here.
+</div>
+</div>
 
 ---
 
