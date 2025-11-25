@@ -165,6 +165,11 @@ Contact: [22f3001685@ds.study.iitm.ac.in](mailto:22f3001685@ds.study.iitm.ac.in)
 
 ---
 
+<!--_color: red-->
+<!--_backgroundColor: black-->
+# <!--fit-->HUGE
+---
+
 <!-- Build notes:
 - To render locally: npx @marp-team/marp-cli slides.md -o slides.pdf
 - Ensure images/architecture-bg.png exists, or replace the path in slide frontmatter.
